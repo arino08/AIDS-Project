@@ -22,7 +22,7 @@ def main():
     p.add_argument("--mode", choices=["ai", "human"], default="ai")
     p.add_argument("--model", default="runs/main/best.npz")
     p.add_argument("--size", type=int, default=10)
-    p.add_argument("--fps", type=int, default=12, help="Game speed in frames per second (default: 12)")
+    p.add_argument("--fps", type=int, default=2, help="Game speed in frames per second (default: 2)")
     args = p.parse_args()
 
     agent = None
