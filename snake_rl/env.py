@@ -28,10 +28,14 @@ class SnakeEnv:
         self.reset()
 
     # ------------------------------------------------------------------ core
-    def reset(self):
+    def reset(self, random_dir=False):
         c = self.size // 2
-        self.direction = 1  # heading right
-        self.snake = deque([(c, c), (c - 1, c), (c - 2, c)])  # head first
+        if random_dir:
+            self.direction = int(self.rng.integers(0, 4))
+        else:
+            self.direction = 1  # heading right
+        dx, dy = DIRS[self.direction]
+        self.snake = deque([(c, c), (c - dx, c - dy), (c - 2 * dx, c - 2 * dy)])  # head first
         self.body = set(self.snake)
         self.score = 0
         self.steps = 0
