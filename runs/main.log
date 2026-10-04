@@ -1,0 +1,21 @@
+step    10000 | eps 0.88 | train avg  0.38 | eval mean 10.33 max 21 |     5s  * new best
+step    20000 | eps 0.76 | train avg  0.68 | eval mean  7.83 max 21 |    11s
+step    30000 | eps 0.63 | train avg  1.13 | eval mean 11.93 max 23 |    17s  * new best
+step    40000 | eps 0.51 | train avg  1.27 | eval mean 10.03 max 23 |    23s
+step    50000 | eps 0.39 | train avg  2.00 | eval mean 12.37 max 20 |    30s  * new best
+step    60000 | eps 0.27 | train avg  3.07 | eval mean 14.10 max 26 |    37s  * new best
+step    70000 | eps 0.14 | train avg  4.63 | eval mean 14.70 max 29 |    44s  * new best
+step    80000 | eps 0.02 | train avg  8.28 | eval mean 21.93 max 37 |    51s  * new best
+step    90000 | eps 0.02 | train avg 12.46 | eval mean 23.97 max 36 |    58s  * new best
+step   100000 | eps 0.02 | train avg 13.46 | eval mean 18.40 max 32 |    65s
+step   110000 | eps 0.02 | train avg 14.07 | eval mean 27.40 max 42 |    73s  * new best
+step   120000 | eps 0.02 | train avg 18.20 | eval mean 25.97 max 46 |    80s
+step   130000 | eps 0.02 | train avg 19.88 | eval mean 33.60 max 50 |    86s  * new best
+step   140000 | eps 0.02 | train avg 20.93 | eval mean 34.53 max 49 |    94s  * new best
+step   150000 | eps 0.02 | train avg 21.28 | eval mean 32.47 max 45 |   101s
+step   160000 | eps 0.02 | train avg 21.32 | eval mean 32.07 max 46 |   109s
+step   170000 | eps 0.02 | train avg 20.64 | eval mean 34.77 max 44 |   117s  * new best
+step   180000 | eps 0.02 | train avg 20.65 | eval mean 33.17 max 47 |   125s
+step   190000 | eps 0.02 | train avg 21.01 | eval mean 34.50 max 44 |   134s
+step   200000 | eps 0.02 | train avg 20.17 | eval mean 35.53 max 49 |   143s  * new best
+done. best eval mean score = 35.53
