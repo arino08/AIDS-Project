@@ -35,10 +35,10 @@ def main():
     env = SnakeEnv(size=args.size, shaping=not args.no_shaping, seed=args.seed)
     agent = DQNAgent(OBS_DIM, N_ACTIONS, seed=args.seed)
 
-    log = open(os.path.join(args.out, "episodes.csv"), "w", newline="")
+    log = open(os.path.join(args.out, "episodes.csv"), "w", newline="", encoding="utf-8")
     w = csv.writer(log)
     w.writerow(["episode", "step", "score", "reward", "length", "epsilon"])
-    evals = open(os.path.join(args.out, "eval.csv"), "w", newline="")
+    evals = open(os.path.join(args.out, "eval.csv"), "w", newline="", encoding="utf-8")
     ew = csv.writer(evals)
     ew.writerow(["step", "mean_score", "median_score", "min_score", "max_score", "mean_loss", "epsilon"])
 

@@ -21,7 +21,7 @@ BLUE, ORANGE, GREY, RED = "#2f6fdb", "#e8833a", "#8a8f98", "#d1453b"
 
 
 def read_csv(path):
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     return {k: np.array([float(r[k]) for r in rows]) for k in rows[0]} if rows else {}
 
@@ -156,7 +156,7 @@ The leftmost panel is the untrained network (random weights).</p>
 <li><b>Reward:</b> +10 for food, −10 for dying or starving, ±0.1 for moving closer/farther from the food (shaping).</li>
 <li><b>Learning:</b> Double DQN with experience replay, a target network, Huber loss and Adam; 128-128 MLP.</li>
 </ul></main></body></html>"""
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_doc)
 
 
